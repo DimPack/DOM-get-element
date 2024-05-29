@@ -16,13 +16,14 @@ const firstTitle =  document.querySelector('.content-section > article').childre
 console.log(firstTitle);
 
 // 5) дістати усі другі абзаци в статтях
-const allSecondParagraphs = document.querySelectorAll('.content-section > article');
-const secondParagraphs = [];
+const secondParagraphs = document.querySelectorAll('.content-section article p:nth-of-type(2)');
+// const allSecondParagraphs = document.querySelectorAll('.content-section > article');
+// const secondParagraphs = [];
 
-allSecondParagraphs.forEach( article => {
-    const p = article.querySelectorAll('p')
-    if(p.length > 1) {
-        secondParagraphs.push(p[1]);
-    }
-})
+// allSecondParagraphs.forEach( article => {
+//     const p = article.querySelectorAll('p')
+//     if(p.length > 1) {
+//         secondParagraphs.push(p[1]);
+//     }
+// })
 console.log(secondParagraphs);
